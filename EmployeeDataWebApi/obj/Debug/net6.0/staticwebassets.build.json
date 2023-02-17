@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EUV0+9F41j+egD5iNglgS6lqJnPDgx6FqYUOFR5mg9Y=",
+  "Source": "EmployeeDataWebApi",
+  "BasePath": "_content/EmployeeDataWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

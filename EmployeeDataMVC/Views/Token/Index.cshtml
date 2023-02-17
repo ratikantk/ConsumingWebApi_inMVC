@@ -1,0 +1,54 @@
+﻿@model EmployeeDataMVC.Models.UserInfo
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Token.cshtml";
+}
+
+
+<h4>Login</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="LoginUser" asp-controller="Token">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <table border="0" cellpadding="2" cellspacing="2">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="Email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="Login"></td>
+                </tr>
+            </table>
+            <label>@Html.Raw(ViewBag.Message)</label>
+        </form>
+    </div>
+</div>
+
+@*
+<form asp-action="LoginUser" asp-controller="Token">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-cbontrol" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Login" class="btn btn-primary" />
+    </div>
+    <label>@Html.Raw(ViewBag.Message)</label>
+</form>*@
